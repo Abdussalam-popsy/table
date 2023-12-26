@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Invoice</title>
+    <style>
+        table, td, th {
+            border: 1px solid black;
+            padding: 8px;
+            border-collapse: collapse;
+            line-height: 1.3;
+        }
+
+        span {
+            font-weight: 700;
+        }
+
+        thead, .blue {
+            background-color: rgba(0, 170, 255, 0.368);
+        }
+    </style>
+</head>
+<body>
+    <table>
+       <thead>
+        <tr>
+            <th colspan="3">Invoice #12345</th>
+            <th>18 July 2019</th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+            <td colspan="2"><span>Pay to:</span> <br> The Tech Park <br> 123 Willow Street <br> Boulevard, LA - 55567
+            </td>
+            <td colspan="2"><span>Customer:</span> <br> John Doe <br> The black wolf <br> USA Ngeria
+            </td>
+        </tr>
+       </tbody>
+       <thead>
+            <th>Name/Description</th>
+            <th>Qty.</th>
+            <th>MRP</th>
+            <th>Amount</th>
+       </thead>
+       <tbody>
+        <tr>
+            <td>Biryani</td>
+            <td>3</td>
+            <td>400</td>
+            <td>1200</td>
+        </tr>
+        <tr>
+            <td>Chocolate Shake</td>
+            <td>3</td>
+            <td>200</td>
+            <td>600</td>
+        </tr>
+        <tr>
+            <td class="blue" colspan="3"><span>Subtotal</span></td>
+            <td>1800</td>
+        </tr>
+        <tr>
+            <td class="blue" colspan="2"><span>Tax</span></td>
+            <td>10%</td>
+            <td>180</td>
+        </tr>
+        <tr>
+            <td class="blue" colspan="3"><span>Grand Total:</span></td>
+            <td>Rs 1620</td>
+        </tr>
+       </tbody>
+    </table>
+</body>
+</html>
